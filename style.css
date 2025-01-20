@@ -18,6 +18,7 @@ header {
     max-width: 1400px;
     margin: 0 auto;
     padding: 30px 0;
+    overflow: hidden;
 }
 
 .nav-section {
@@ -137,6 +138,78 @@ input#menuToggle {
 /***************** Banner Section End *****************/
 
 
+/*****************Curriculum Section Start *****************/
+ .curriculum{
+    width: 1400px;
+    margin:0 auto;
+    padding-bottom:200px;
+    background:url(images/bg.png);
+    background-position: top center;
+}
+
+.curriculum h2{
+    text-align: center;
+    margin-bottom: 100px;
+    color: #000000;
+    font-size: 46px;
+    font-weight: 800;
+
+}
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    gap:100px;
+    
+}
+
+.service{
+    text-align: center;
+    background: linear-gradient(to bottom, #def5ff, #FFFFFF);
+    padding: 60px 25px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #def5ff;
+}
+
+.service img{
+    height: auto;
+}
+.service-title{
+    font-size: 25px;
+    font-weight: 800;
+    color:#202020;
+    margin:20px;
+}
+
+.service-para{
+    color:#808080;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.service-button a{
+    color: #64C8FF;
+    font-size: 16px;
+}
+
+.elementary{
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+}
+.elementary a{
+    color: #F0AA00;
+}
+
+.middle{
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF);
+}
+.middle a{
+    color:#8700FF;
+}
+ 
+
+/*****************Curriculum Section End *****************/
+
 
 /*************** Responsive Part Start For Moible Device(Max-576px) ***************/
 
@@ -186,6 +259,32 @@ input#menuToggle {
 
 .banner-content h1{
     font-size: 36px!important
+}
+
+.curriculum h2{
+    font-size: 36px;
+}
+
+.curriculum {
+    width: 100%;
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+}
+.services {
+    grid-template-columns: repeat(1, 1fr); /* Two columns on medium screens */
+
+}
+
+.curriculum {
+    width: 100%;
+    margin: 30px 15px;
+}
+.services {
+    flex-direction: column;
+}
+
+.service{
+    margin:0;
+    padding:25px 0;
 }
 
 }
@@ -244,9 +343,11 @@ input#menuToggle {
 
 .banner-img{
     order:-1;
+    
+}
+.banner-img img{
     width: 100%;
 }
-
 .banner-content h1{
     font-size: 56px;
     margin-top:40px;
@@ -263,6 +364,12 @@ input#menuToggle {
     padding: 16px 60px;
     border-radius: 10px;
 }
+
+
+.services {
+    flex-direction: column;
+}
+
 }
 
 /*************** Responsive Part Star For Medium Device(Max-768px) ***************/
