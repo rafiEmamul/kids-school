@@ -15,7 +15,7 @@ a {
 /**************** Menu Section Start ****************/
 
 header {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 30px 0;
     overflow: hidden;
@@ -140,9 +140,9 @@ input#menuToggle {
 
 /*****************Curriculum Section Start *****************/
  .curriculum{
-    width: 1400px;
+    width: 1440px;
     margin:0 auto;
-    padding-bottom:200px;
+    padding-bottom:50px;
     background:url(images/bg.png);
     background-position: top center;
 }
@@ -175,7 +175,7 @@ input#menuToggle {
 .service img{
     height: auto;
 }
-.service-title{
+.service-title,.stories-title{
     font-size: 25px;
     font-weight: 800;
     color:#202020;
@@ -228,6 +228,152 @@ input#menuToggle {
  
 
 /*****************Curriculum Section End *****************/
+
+/*****************Stories Section Start *****************/
+
+.sbg{
+    background: url(images/bg.png),linear-gradient(to bottom, #fff, #fea10136);
+
+}
+.stories {
+    width: 1440px;
+    margin: 0 auto;
+    background-position: top center;
+    padding:50px 0;
+
+}
+
+.stories-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.stories-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+
+#first {
+    grid-row: span 3;
+    position: relative;
+    overflow: hidden;
+    max-height: 790px;
+
+   
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.gallery:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    position: relative;
+}
+
+#first>img {
+    min-height: 400px;
+    position: relative;
+}
+
+.date-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #24D6C0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+
+.gallery-title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin:50px 0;
+    color: #000;
+    padding:0 50px;
+}
+
+.first-para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555;
+    padding:0 50px;
+}
+
+.gallery-description:hover {
+    color: #4b1d6a;
+}
+
+.btn-text {
+    font-size: 21px;
+    color: #ffffff;
+    background-color: #3CD8E8;
+    padding: 9px 25px;
+    border-radius: 40px;
+    position: absolute;
+    left: 40px;
+    bottom: 343px;
+    font-weight: 800;
+}
+
+.img{
+    position: relative;
+}
+.btn a {
+    display: inline-block;
+    margin: 25px 0 0 20px;
+    color: white;
+    background: red;
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -47px;
+    bottom: 10px;
+}
+
+.gd{
+    font-size: 16px;
+    font-weight: 800;
+    padding:0 0 50px 10px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*****************Stories Section End *****************/
+
 
 
 /*************** Responsive Part Start For Moible Device(Max-576px) ***************/
@@ -311,7 +457,36 @@ input#menuToggle {
 .arrow-section{
     display: none;
 }
+
+.stories {
+    padding: 15px;
+    width: 100%;
 }
+
+.stories-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.stories-gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.stories-gallery img{
+    width: 100%;
+}
+
+#first{
+    display: none;
+}
+
+.gd{
+    text-align: center;
+}
+
+
+}
+
 /*************** Responsive Part End For Moible Device(Max-576px) ***************/
 
 /*************** Responsive Part Star For Medium Device(Max-768px) ***************/
@@ -382,7 +557,7 @@ input#menuToggle {
     
 }
 
-.banner-button a{
+.banner-button a,.stories-btn a{ 
     background-color: black;
     color:white;
     padding: 16px 60px;
@@ -411,6 +586,7 @@ input#menuToggle {
 .arrow-section{
     display: none;
 }
+
 
 }
 
