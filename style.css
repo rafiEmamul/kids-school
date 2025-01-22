@@ -21,6 +21,21 @@ header {
     overflow: hidden;
 }
 
+.marquee {
+    width: 1400px; 
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 20px; 
+    font-weight: 600; 
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
 .nav-section {
     display: flex;
     justify-content: space-between;
@@ -124,6 +139,7 @@ input#menuToggle {
 
 .banner-button{
     margin-top:50px;
+    text-align: center;
 }
 .banner-button a{
     background-color: black;
@@ -135,13 +151,17 @@ input#menuToggle {
     width: 100%;
 }
 
+.b-btn{
+    text-align: left;
+}
+
 /***************** Banner Section End *****************/
 
 
 /*****************Curriculum Section Start *****************/
  .curriculum{
     width: 1440px;
-    margin:0 auto;
+    margin:50px auto 0;
     padding-bottom:50px;
     background:url(images/bg.png);
     background-position: top center;
@@ -233,6 +253,7 @@ input#menuToggle {
 
 .sbg{
     background: url(images/bg.png),linear-gradient(to bottom, #fff, #fea10136);
+    overflow: hidden;
 
 }
 .stories {
@@ -240,6 +261,7 @@ input#menuToggle {
     margin: 0 auto;
     background-position: top center;
     padding:50px 0;
+
 
 }
 
@@ -363,31 +385,137 @@ input#menuToggle {
     margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-
 /*****************Stories Section End *****************/
+
+/*****************Footer Section Start *****************/
+
+footer {
+    background-color: #01ACFD;
+    display: flex;
+    justify-content: center;
+    padding:100px 0;
+
+}
+
+.footer-content{
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+}
+.footer-left{
+    color:#fff;
+}
+
+.footer-left img{
+    width: 120px;
+}
+
+.logo_text{
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.left-content p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 35px;
+    letter-spacing: 1.3px;
+}
+
+.footer-content li{
+    list-style: none;
+}
+
+.footer-content li a{
+    color:#fff;
+}
+.footer_title,.right_title{
+    color:#FFFFFF;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+.center_links{
+    margin-bottom: 50px;
+}
+
+.center_links a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding:8px 0;
+}
+.footer_icons{
+    display: flex;
+    gap: 15px;
+}
+.footer_icons i {
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 15px;
+}
+
+.fa-facebook-f{
+    background:#3B5998;
+}
+
+.fa-dribbble{
+    background:#EA4C89;
+}
+
+.fa-twitter{
+    background:#1DA1F2;
+}
+
+.fa-google-plus{
+    background:#DD4B39;
+}
+
+.footer_center{
+    margin-left:50px;
+}
+
+.footer-center {
+    margin-left: 70px;
+}
+/*****************Footer Section End *****************/
+
+
 
 
 
 /*************** Responsive Part Start For Moible Device(Max-576px) ***************/
 
 @media screen and (max-width: 576px) {
-
-    header{
-        padding: 50px;
+    header {
+        padding: 0 50px 0 50px;
     }
     .logo-text,
     .logo-btn,
     .menu-section {
         display: none;
     }
+
+    .marquee{
+        width: 100%;
+    }
+
+    .nav-section {
+        position: relative;
+      }
+      
+      .nav-section::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px; 
+        height: 1px;
+        background-color:rgba(255, 166, 0, 0.504); 
+      }
 
     .bar {
         display: block;
@@ -403,6 +531,11 @@ input#menuToggle {
         width: 100%;
         padding: 10px 0;
         text-align: center;
+    }
+
+    .banner-button.b-btn {
+        margin-top: 60px;
+        display: inline-block;
     }
 
     .menu-links {
@@ -432,8 +565,10 @@ input#menuToggle {
 
 .curriculum {
     width: 100%;
-    padding: 50px 20px;
+    margin: 30px 0;
+    padding: 0 0 30px 0;
 }
+
 .services {
     flex:grid;
     grid-template-columns: repeat(1, 1fr); 
@@ -482,18 +617,8 @@ input#menuToggle {
     display: none;
 }
 
-
-}
-
-.stories-btn {
-    text-align: center;
-   
-    
-}
-
 .stories-btn a {
     display: inline-block;
-    margin: 0 auto;
     font-size:20px;
     font-weight: 800;
    
@@ -504,9 +629,25 @@ input#menuToggle {
     justify-content: center;
     align-items: center;
     width: 100%;
+    text-align: center!important;
+    margin-top: 30px;
    
 }
 
+.footer-content{
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding-left: 25px;
+}
+
+.footer-center {
+    margin-left: 0;
+}
+
+.footer_title{
+    margin-top: 30px;
+}
+}
 
 
 /*************** Responsive Part End For Moible Device(Max-576px) ***************/
@@ -556,10 +697,10 @@ input#menuToggle {
         display: block;
 }
 
-.banner-section{
-    flex-direction: column;  
-    text-align: center;  
-    padding:100px 0;
+.banner-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0 0 0;
 }
 
 .banner-img{
@@ -577,6 +718,11 @@ input#menuToggle {
 .banner-content p{
     font-size: 18px;
     
+}
+
+.b-btn{
+    display: inline;
+    text-align: justify;
 }
 
 .banner-button a,.stories-btn a{ 
