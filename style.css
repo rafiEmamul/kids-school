@@ -149,7 +149,7 @@ input#menuToggle {
 
 .curriculum h2{
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     color: #000000;
     font-size: 46px;
     font-weight: 800;
@@ -432,11 +432,11 @@ input#menuToggle {
 
 .curriculum {
     width: 100%;
-    padding: 50px 20px; /* Adjust padding for smaller screens */
+    padding: 50px 20px;
 }
 .services {
     flex:grid;
-    grid-template-columns: repeat(1, 1fr); /* Two columns on medium screens */
+    grid-template-columns: repeat(1, 1fr); 
 
 }
 
@@ -457,20 +457,22 @@ input#menuToggle {
 .arrow-section{
     display: none;
 }
-
+.sbg{
+    padding:30px 0;
+}
 .stories {
-    padding: 15px;
-    width: 100%;
+    width: 95%;
+    padding: 0 5px;
 }
 
 .stories-title {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 40px;
+
 }
 
 .stories-gallery {
-    grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-columns: repeat(2,1fr);
 }
 .stories-gallery img{
     width: 100%;
@@ -480,12 +482,32 @@ input#menuToggle {
     display: none;
 }
 
-.gd{
+
+}
+
+.stories-btn {
     text-align: center;
+   
+    
+}
+
+.stories-btn a {
+    display: inline-block;
+    margin: 0 auto;
+    font-size:20px;
+    font-weight: 800;
+   
+}
+
+.banner-button.stories-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
 }
 
 
-}
 
 /*************** Responsive Part End For Moible Device(Max-576px) ***************/
 
