@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <header>
+        <section class="navar w-[1460px] m-auto">
+            <div class="navbar bg-base-100 w-[1460px] m-auto p-[30px] shadow-sm rounded-md">
+                <div class="flex-1">
+                  <a class="text-xl flex items-center text-[35px] cursor-pointer w-[55px] h-[55px]"><img class="mr-2" src="images/logo.png" alt="Logo"> Dev<span class="font-bold">Board</span></a>
+                </div>
+                
+                <div class="header-right flex items-center justify-between">
+                    <div class="rainbow-section">
+                        <div class="back-btn">
+                            <a href="index.html"><button class="btn btn-primary text-[20px] font-bold p-6">Back to Desk</button></a>
+                        </div>
+                    </div>
+                </div>
+                 
+              </div>
+        </section>
+    </header>
+
+    <section class="blog-content w-[1460px] m-auto">
+        <h1>Blogs</h1>
+        <section class="question">
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-1: What are the different ways to select an element in the DOM?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">1.document.getElementById() <br> 2.document.getElementByClassName() <br> 3.document.querySelector() <br> 4.document.querySelectorAll() <br> 5.document.getElementByTagName()</div>
+            </div>
+            
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">
+                    1.innerHTML is use to set or get the html code in an section <br>
+                    2.innerText is use to set or get the text inside the html code or snippet <br>
+                    3.In the term of textContent is as same as innerText <br>
+                </div>
+            </div>
+
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-3: What is event delegation in the DOM?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">Event delegation in the DOM is a technique where  attach a single event listener to a parent element, rather than attaching individual event listeners to each of its child elements. This allows  to handle events for multiple child elements efficiently.</div>
+            </div>
+
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-4: What is event bubbling in the DOM?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">Event bubbling is a fundamental concept in web development that describes the order in which events are handled in the Document Object Model (DOM) when nested elements are involved.</div>
+            </div>
+
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">1.document.getElementById() <br> 2.document.getElementByClassName() <br> 3.document.querySelector() <br> 4.document.querySelectorAll() <br> 5.document.getElementByTagName()</div>
+            </div>
+
+            <div class="qa">
+                <div class="text-[23px] font-bold mb-3 border-b-5 border-dotted border-gray-200 pb-2">
+                    Question-5: How do you create, add, and remove elements using JavaScript?
+                  </div>
+                <div class="text-[22px] text-gray-600 mb-[50px]">
+                    For Create: <br>
+                    const newPar = document.createElement('p'); <br>
+
+                    <br>
+
+                    For Add: <br>
+                    const par = document.getElementById('myDiv'); <br>
+                    par.appendChild(newPar); <br>
+
+                    <br>
+
+                    For Remove:
+                    const remove = document.getElementById('re-ele'); <br>
+                    parentDiv.removeChild(remove); <br>
+
+                </div>
+            </div>
+        </section>
+    </section>
+
+    
+
+
+</body>
+</html>
