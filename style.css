@@ -1,0 +1,19 @@
+.body-right p {
+    background-color: #f4f7ff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border-left: 4px solid #3752FD;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .body-right p:hover {
+    background-color: #e1e8ff;
+    border-left-color: #3752FD;
+    transform: scale(1.02);
+  }
+  
